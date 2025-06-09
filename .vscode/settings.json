@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": true,
+    "python.defaultInterpreterPath": ".venv/bin/python",
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultColorDecorators": "never",
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off"
+    }
+}
