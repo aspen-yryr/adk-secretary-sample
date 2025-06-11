@@ -1,7 +1,9 @@
 import json
+from pathlib import Path
 
+from config import config
 from schedule import app
 
-with open("openapi.json", "w") as f:
+with (Path(config.openapi_schema_base_dir) / Path("openapi.json")).open("w") as f:
     api_spec = app.openapi()
     f.write(json.dumps(api_spec, indent=2))
